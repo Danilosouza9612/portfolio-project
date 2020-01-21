@@ -1,0 +1,8 @@
+<h1>Boa tarde galera!</h1>
+
+{% for job in jobs.all %}
+<div>
+  <img src="{{ job.imagefun.url }}" />
+  <p>{{ job.summary }}</p>
+</div>
+{% endfor %}
